@@ -1,0 +1,82 @@
+body{
+    background-color: #C3C49E;
+}
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    line-height: 50px;
+    text-align :center;
+    background-color: #8F7E4F;
+    text-transform: uppercase;
+    height: 50px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: #8F7E4F;
+    height: 50px;
+    text-align: center;
+
+}
+a{
+    display: block;
+    width: 33%;
+    height: 50px;line-height: 50px;
+    float: left;
+}
+i.glyphicon{
+    color: #FCF6B1;
+    margin-top: 10px
+}
+a:first-child{
+    border-right: 1px solid white;
+}
+#second-a{
+     border-right: 1px solid white;
+}
+
+.active{
+    border-top: 5px solid #524632;
+}
+.view{
+    position: absolute;
+    right: 15px;
+    left: 15px;
+    bottom: 60px;
+    top: 60px;
+    overflow-x: hidden;
+
+
+}
+.left{
+    transition-duration: 10s;
+    transform: translate3d(0%,0,0);
+}
+.cityClass{
+    text-align: center;
+}
+.formClass{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.formColor{
+   color:   #E0E32C;
+}
+.return{
+    position: absolute;
+    font-size: 150%;
+    top: 5px;
+    left: 15px;
+    float: left;
+}
+.chercherClass{
+    float: right;
+    right: 20px;
+}
+

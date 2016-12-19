@@ -1,0 +1,66 @@
+body{
+    background-color: #696969;
+}
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    line-height: 50px;
+    text-align :center;
+    background-color: #1E90FF;
+    text-transform: uppercase;
+    height: 50px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: #1E90FF;
+    height: 50px;
+    text-align: center;
+
+}
+a{
+    display: block;
+    width: 33%;
+    height: 50px;line-height: 50px;
+    float: left;
+}
+i{
+    color: red;
+    margin-top: 10px
+}
+a:first-child{
+    border-right: 1px solid white;
+}
+#second-a{
+     border-right: 1px solid white;
+}
+
+.active{
+    border-top: 5px solid #9932CC;
+}
+.view{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 60px;
+    top: 60px;
+    overflow-x: hidden;
+
+
+}
+.left{
+    transition-duration: 10s;
+    transform: translate3d(0%,0,0);
+}
+.cityClass{
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+
+   <div class="formClass">
+	 <form>
+		    <div style="text-align: center;">
+		      <strong style="color: #1F1300">POUR ME CONTACTER</strong><br/><br/>
+		    </div>
+		    <div class="form-group">
+		      <i class='formColor' for="name">Nom complet:</i><br/>
+		      <input type="text" class="form-control"  ng-model='contact.name'>
+		    </div>
+		    <div class="form-group">
+		      <i class='formColor' for="pwd">sujet:</i><br/>
+		      <input type="text" class="form-control" ng-model='contact.sujet'>
+		    </div>
+		    <div class="form-group">
+		      <i class='formColor' for="email">email:</i><br/>
+		      <input type="email" class="form-control" ng-model='contact.email'>
+		    </div> 
+		    <div class="form-group">
+		      <i class='formColor' for="message">Message:</i><br/>
+		      <textarea class="form-control" rows="5" ng-model='contact.message'></textarea>
+		   </div>
+		    <button type="submit" style="background-color: #8F7E4F;border:3px solid #1F1300" ng-click="envoyer(contact)" ng-disabled="!(contact.name) ||!(contact.sujet) ||!(contact.email) ||!(contact.message)" class="btn  btn-block btn-warning "><b style="color: #FCF6B1">ENVOYER</b></button>
+	  </form>
+   </div>

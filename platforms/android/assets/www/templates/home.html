@@ -1,0 +1,40 @@
+<div class="container">
+  <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-sm-10">
+          <input type="text" class="form-control" ng-model='name' placeholder="entrer le nom de la ville">
+        </div>
+      </div>
+    
+    
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default btn-danger" ng-click='chercher()' style="float: right;"><b style="color: black">CHERCHER</b></button>
+        </div>
+      </div>
+
+  </form>
+  <div class="list-group" ng-show='displaying'>
+      <div  class="list-group-item list-group-item-danger cityClass">
+           <strong >{{city}} / {{country}}</strong>
+      </div>
+      <div  class="list-group-item list-group-item-success " ng-repeat='t in content.list'>
+           
+           <div>
+                <div style="text-align: right;" >
+                    <strong >{{Math.round(t.temp.day)}} °C </strong>
+                </div>
+                <div  style="text-align: left" >
+                    <strong style="top: 0px;font-size: 150%" >{{t.dt*1000|date:'EEE'}}</strong> <br/>
+                    {{t.dt*1000|date:'dd/MM'}}
+                </div>  
+           </div>
+           <div style="text-align: center;">
+              <img src="http://openweathermap.org/img/w/{{t.weather.0.icon}}.png" style="width: 50px;height: 50px;">
+           </div>     
+
+      </div>
+
+      
+  </div>
+</div>
